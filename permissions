@@ -1,0 +1,159 @@
+permissions:
+  hunteranticheat.system.notice:
+    description: See broadcasts when a player is kicked or banned for hacking
+  hunteranticheat.system.alert:
+    description: See alerts when a player might be cheating
+  hunteranticheat.system.help:
+    description: Access the help message
+  hunteranticheat.system.mute:
+    description: Access the mute function
+  hunteranticheat.system.report:
+    description: Access cheat reports
+  hunteranticheat.mod:
+    description: Mod helper perm
+    children:
+      hunteranticheat.system.notice: true
+      hunteranticheat.system.alert: true
+      hunteranticheat.system.help: true
+      hunteranticheat.system.report: true
+      hunteranticheat.system.mute: true
+  hunteranticheat.system.log:
+    description: Access turning console logging on or off
+  hunteranticheat.system.reload:
+    description: Access reloading the system
+  hunteranticheat.system.reset:
+    description: Access resetting a player's cheat level
+  hunteranticheat.system.version:
+    description: Access information about whether the system is updated
+  hunteranticheat.admin:
+    description: Admin helper perm
+    children:
+      hunteranticheat.mod: true
+      hunteranticheat.system.log: true
+      hunteranticheat.system.reload: true
+      hunteranticheat.system.reset: true
+      hunteranticheat.system.mute: true
+  hunteranticheat.check.flight:
+    description: Allow players to use fly cheats
+    default: false
+  hunteranticheat.check.elytrafly:
+    description: Allow players to use ElytraFly cheats
+    default: false
+  hunterhunteranticheat.check.waterwalk:
+    description: Allow players to walk on water
+    default: false
+  hunteranticheat.check.fastplace:
+    description: Allow players to use build hacks and fastplace
+    default: false
+  hunteranticheat.check.chatspam:
+    description: Allow players to spam chat messages
+    default: false
+  hunteranticheat.check.commandspam:
+    description: Allow players to spam chat messages
+    default: false
+  hunteranticheat.check.sprint:
+    description: Allow players to sprint when hungry
+    default: false
+  hunteranticheat.check.sneak:
+    description: Allow players to use sneak hacks
+    default: false
+  hunteranticheat.check.speed:
+    description: Allow players to use speed hacks
+    default: false
+  hunteranticheat.check.vclip:
+    description: Allow players clip through walls
+    default: false
+  hunteranticheat.check.spider:
+    description: Allow players to climb non-climbable surfaces
+    default: false
+  hunteranticheat.check.nofall:
+    description: Allow players to avoid fall damage
+    default: false
+  hunteranticheat.check.fastbow:
+    description: Allow players to quickly fire bows
+    default: false
+  hunteranticheat.check.fasteat:
+    description: Allow players to eat food instantly
+    default: false
+  hunteranticheat.check.fastheal:
+    description: Allow players to heal up instantly
+    default: false
+  hunteranticheat.check.killaura:
+    description: Allow players to use killaura
+    default: false
+  hunteranticheat.check.unicode:
+    description: Allow players to use unicode in chat
+    default: false
+  hunteranticheat.check.fastprojectile:
+    description: Allow players to spam projectiles (fastbow etc.)
+    default: false
+  hunteranticheat.check.itemspam:
+    description: Allow players to use inventory drop spam hacks
+    default: false
+  hunteranticheat.check.fastinventory:
+    description: Allow players to use fastloot and similar inventory hacks
+    default: false
+  hunteranticheat.check.morepackets:
+    description: Allow players to send lots of movement packets or modify their timer
+    default: false
+  hunteranticheat.check.badpackets:
+    description: Allow players to send invalid movement packets
+    default: false
+  hunteranticheat.check.velocity:
+    description: Allow players to use knockback prevention
+    default: false
+  hunteranticheat.check.criticals:
+    description: Allow players to use criticals
+    default: false
+  hunteranticheat.check.illegalinteract:
+    description: Allow players to place blocks in illegal places
+    default: false
+  hunteranticheat.check.fastladder:
+    description: Allow players to climb ladders faster
+    default: false
+  hunteranticheat.check.aimbot:
+    description: Allow players to use aimbot
+    default: false
+  hunteranticheat.check.strafe:
+    description: Allow players to use strafe hacks
+    default: false
+  hunteranticheat.check.noslow:
+    description: Allow players to use NoSlow hacks
+    default: false
+  hunteranticheat.check.boatfly:
+    description: Allow players to use boat fly hacks
+    default: false
+  hunteranticheat.check.exempt:
+    description: Total exemption from checks
+    default: false
+    children:
+      hunteranticheat.check.flight: true
+      hunteranticheat.check.elytrafly: true
+      hunteranticheat.check.waterwalk: true
+      hunteranticheat.check.fastplace: true
+      hunteranticheat.check.chatspam: true
+      hunteranticheat.check.commandspam: true
+      hunteranticheat.check.sprint: true
+      hunteranticheat.check.sneak: true
+      hunteranticheat.check.speed: true
+      hunteranticheat.check.vclip: true
+      hunteranticheat.check.spider: true
+      hunteranticheat.check.nofall: true
+      hunteranticheat.check.fastbow: true
+      hunteranticheat.check.fasteat: true
+      hunteranticheat.check.fastheal: true
+      hunteranticheat.check.killaura: true
+      hunteranticheat.check.fastprojectile: true
+      hunteranticheat.check.itemspam: true
+      hunteranticheat.check.fastinventory: true
+      hunteranticheat.check.morepackets: true
+      hunteranticheat.check.badpackets: true
+      hunteranticheat.check.velocity: true
+      hunteranticheat.check.criticals: true
+      hunteranticheat.check.unicode: true
+      hunteranticheat.check.illegalinteract: true
+      hunteranticheat.check.fastladder: true
+      hunteranticheat.check.aimbot: true
+      hunteranticheat.check.strafe: true
+      hunteranticheat.check.noslow: true
+      hunteranticheat.check.boatfly: true
